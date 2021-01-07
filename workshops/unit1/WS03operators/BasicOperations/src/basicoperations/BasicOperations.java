@@ -76,11 +76,6 @@ public class BasicOperations {
     System.out.println(" The sustraction of " + minuend + " - " + subtrahend +
             " is iqual to " + (minuend - subtrahend));
     
-    
-       
-            
-    
-    
     }
     
 }
