@@ -91,6 +91,7 @@ int x = 10;
         System.out.println(" ( " + p + " v " + q + " ) " + (p || q));
         
         
+        
   }
     
 }

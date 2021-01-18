@@ -60,6 +60,7 @@ public class HW02_01 {
         Volume = (short) (c * Math.PI*h*((Math.pow(R, 2)+(Math.pow(r, 2)+R*r))));
                 
                 System.out.println( "The volume of the truncated cone is iqual to --> " + Volume );
+                System.exit(0);
                      
     }
     

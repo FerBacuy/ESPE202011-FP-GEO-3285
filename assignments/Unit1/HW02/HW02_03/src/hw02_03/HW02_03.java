@@ -34,15 +34,10 @@ public class HW02_03 {
         
         //operation
         Scanner scanner = new Scanner( System.in );
-
         System.out.printf( "Enter the height: " );
-        h = scanner.nextFloat();
-        
-        
+        h = scanner.nextFloat();        
         System.out.printf( "Enter the major radius: ");
-        R = scanner.nextFloat();
-        
-        
+        R = scanner.nextFloat();        
         System.out.printf( "Enter the minor radius: ");
         r = scanner.nextFloat();
    
@@ -50,17 +45,14 @@ public class HW02_03 {
         //operation
          
         g = (float)sqrt((Math.pow(h, 2))+ Math.pow((R-r),2));
-        
-                System.out.println( "The generatrix of the truncated cone is iqual to --> " + g ); 
+        System.out.println( "The generatrix of the truncated cone is iqual to --> " + g ); 
         
         Area = (float)(Math.PI*(g*(R+r)+(Math.pow(R, 2)+(Math.pow(r, 2)))));
-        
-                System.out.println( "The area of the truncated cone is iqual to --> " + Area ); 
+        System.out.println( "The area of the truncated cone is iqual to --> " + Area ); 
         
         Volume =  (float)(c * Math.PI*h*((Math.pow(R, 2)+(Math.pow(r, 2)+R*r))));
-                
-                System.out.println( "The volume of the truncated cone is iqual to --> " + Volume );
-                      
+        System.out.println( "The volume of the truncated cone is iqual to --> " + Volume );
+        System.exit(0);     
     }
     
 }

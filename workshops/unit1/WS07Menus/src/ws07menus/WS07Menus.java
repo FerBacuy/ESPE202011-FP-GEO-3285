@@ -44,16 +44,40 @@ public class WS07Menus {
                     System.out.println("enter addend 2 -> ");
                     addend2 = input.nextInt();
                     sum = addend1 + addend2;
-                    System.out.println(" the sum is --> " + sum);
+                    System.out.println(" the sum to addend 1 +addend 2 --> " + sum);
                     break;
                 case 2:
-                    System.out.println("The subtraction is");
+                    int minuend;
+                    int subtrahend;
+                    int rest;
+                    System.out.println("enter minuend  -> ");
+                    minuend = input.nextInt();
+                    System.out.println("enter subtrahend -> ");
+                    subtrahend = input.nextInt();
+                    rest = subtrahend -  minuend;
+                    System.out.println("The subtraction to minuend + subtrahend --> " + rest);
                     break;
                 case 3:
-                    System.out.println("The multiplcation is");
+                    int multiplicand;
+                    int multiplier;
+                    int mult;
+                    System.out.println("enter multiplicand -> ");
+                    multiplicand = input.nextInt();
+                    System.out.println("enter multiplier -> ");
+                    multiplier = input.nextInt();
+                    mult = multiplicand * multiplier;
+                    System.out.println(" the multiply to multiplicand + multiplier--> " + mult);
                     break;
                 case 4:
-                    System.out.println("The division is");
+                    int dividend;
+                    int divisor;
+                    int div;
+                    System.out.println("enter dividend -> ");                 
+                    dividend = input.nextInt();
+                    System.out.println("enter divisor -> ");
+                    divisor = input.nextInt();
+                    div = dividend * divisor;
+                    System.out.println(" the multiply to multiplicand + multiplier--> " + div);
                     break;
                 case 5:
                     System.out.println("Good Bye my friend");

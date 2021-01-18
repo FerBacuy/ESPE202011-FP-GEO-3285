@@ -5,8 +5,6 @@
  */
 package hw03_interations;
 
-import java.util.Scanner;
-
 
 /**
  *
