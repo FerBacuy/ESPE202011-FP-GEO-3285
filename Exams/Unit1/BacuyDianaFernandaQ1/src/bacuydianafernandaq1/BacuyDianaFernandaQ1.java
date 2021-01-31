@@ -35,7 +35,7 @@ public class BacuyDianaFernandaQ1 {
                     System.out.println("What table do you want to study");
                     n = input.nextInt();
                     for (int i = 1; i<=top; i++){
-                    System.out.println( "The multiplication of " + n + "*"+ i +"  is --> " +n*i );
+                    System.out.println(  + n + "*"+ i +"  = " +n*i );
                     }
                     System.out.println("Press 0 to exit");
                     break;
