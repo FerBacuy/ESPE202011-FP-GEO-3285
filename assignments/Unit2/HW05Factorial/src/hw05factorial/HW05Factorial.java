@@ -24,23 +24,19 @@ public class HW05Factorial {
         int i;
         long factorial;
         int number;
-        
-        
+               
         i = 1;
         factorial = 1;
-        
-        
+         
       System.out.println("Enter the number to factorize:");
       Scanner sc = new Scanner(System.in);
       number = sc.nextInt();
       
-     if(number>=0 && number<=15) {
-         
+     if(number>=0 && number<=15) {        
          while(i <=number) {
              factorial = factorial * i;
              i++;
-         }
-     
+         }  
          System.out.println(+number+ "! is iqual to " + factorial);
          
      } else {
