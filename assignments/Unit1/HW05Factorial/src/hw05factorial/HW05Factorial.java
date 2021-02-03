@@ -16,10 +16,8 @@ public class HW05Factorial {
     /**
      * @param args the command line arguments
      */
-    @SuppressWarnings("empty-statement")
+
     public static void main(String[] args) {
-      
-        
         // DONE
         int i;
         long factorial;
