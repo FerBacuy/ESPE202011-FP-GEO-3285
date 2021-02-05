@@ -40,7 +40,7 @@ public class WS10Funtions {
     }
 
     //function definition
-    //return data type    name     parameter1   parameter2
+    //return data type    name            parameter1   parameter2
     public static float divideTwoNumbers(int dividend, int divisor) {
         //body of the function
         float quotient = 0.0F;
