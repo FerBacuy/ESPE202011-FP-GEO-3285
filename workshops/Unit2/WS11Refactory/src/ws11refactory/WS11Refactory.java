@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws10funtions;
+package ws11refactory;
 
 /**
  *
- * @author DIANA BACUY
+ * @author USER
  */
-public class WS10Funtions {
-
-    /**
+public class WS11Refactory {
+/**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -36,6 +35,11 @@ public class WS10Funtions {
         x = -1;
         y = f(x);
         System.out.println("the square of -> " + x + " <- is equal to -> " + y);
+        
+        int number = 5;
+        int fact = 0;
+        fact = factorial(number);
+        System.out.println("factorial of " + number + " is equal to -> " + fact);
 
     }
 
@@ -68,4 +72,16 @@ public class WS10Funtions {
         return y;
     }
 
+    private static int factorial(int n) {
+
+        if (n < 0) {
+            return -1;
+        } else {
+            if (n == 0) {
+                return 1;
+            } else {
+                return (n * factorial(n - 1));
+            }
+        }
+    }
 }

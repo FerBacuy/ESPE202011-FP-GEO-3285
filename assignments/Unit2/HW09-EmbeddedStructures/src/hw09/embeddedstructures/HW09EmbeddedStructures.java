@@ -40,20 +40,17 @@ public class HW09EmbeddedStructures {
             operand2 = input.nextInt();
 
             if (operand1 % 2 == 0 && operand2 % 2 == 0) {
-                product1 = operand1 * operand2;
-                System.out.println(" The product is " + product1);
+                showProduct(operand1, operand2);
 
             } else {
 
                 if (operand1 % 3 == 0 && operand2 % 3 == 0) {
-                    sum = operand1 + operand2;
-                    System.out.println(" The sum is " + sum);
+                    showSum(operand1, operand2);
 
                 } else {
 
                     if (operand1 % 7 == 0 && operand2 % 7 == 0) {
-                        module = operand1 % operand2;
-                        System.out.println(" The modul is " + module);
+                        showModule(operand1, operand2);
                     } else {
 
                         if (operand1 % 11 == 0 && operand2 % 11 == 0) {
@@ -62,8 +59,7 @@ public class HW09EmbeddedStructures {
                                 System.out.println(" the table of --> " + operand1 + " <-- ");
 
                                 for (int i = 1; multiplier1 <= top; multiplier1++) {
-                                    product2 = operand1 * multiplier1;
-                                    System.out.println(operand1 + " x " + multiplier1 + " = " + product2);
+                                    showTheProduct(operand1, multiplier1);
                                 }
                             }
                         }
@@ -96,4 +92,29 @@ public class HW09EmbeddedStructures {
             }
         } while (operand1 > 0);
     }
+
+    private static void showTheProduct(int operand1, int multiplier1) {
+        int product2;
+        product2 = operand1 * multiplier1;
+        System.out.println(operand1 + " x " + multiplier1 + " = " + product2);
+    }
+
+    private static void showModule(int operand1, int operand2) {
+        int module;
+        module = operand1 % operand2;
+        System.out.println(" The modul is " + module);
+    }
+
+    private static void showSum(int operand1, int operand2) {
+        int sum;
+        sum = operand1 + operand2;
+        System.out.println(" The sum is " + sum);
+    }
+
+    private static void showProduct(int operand1, int operand2) {
+        int product1;
+        product1 = operand1 * operand2;
+        System.out.println(" The product is " + product1);
+    }
 }
+

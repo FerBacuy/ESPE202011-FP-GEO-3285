@@ -89,7 +89,7 @@ public class HW10Functions {
         return y;
         
     }
-        public static int multiplicationtable(int x) {
+        public static int ShowTheMultiplicationTable(int x) {
          int product = 0;
 
         return product;
