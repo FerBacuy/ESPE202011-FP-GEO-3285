@@ -7,10 +7,11 @@ package ws11refactory;
 
 /**
  *
- * @author USER
+ * @author Diana Bacuy
  */
 public class WS11Refactory {
-/**
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -85,3 +86,5 @@ public class WS11Refactory {
         }
     }
 }
+
+

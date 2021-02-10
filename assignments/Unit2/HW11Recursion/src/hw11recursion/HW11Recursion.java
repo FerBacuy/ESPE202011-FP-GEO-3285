@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package hw11recursion;
+import java.util.Scanner;
 
 /**
  *
@@ -14,18 +15,42 @@ public class HW11Recursion {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // DONE
-        int result = sum(12);
-        System.out.println(result);
+  public static void main(String[] args) {
+      //Done
+       long n,p,r=1;
+	
+       Scanner sc=new Scanner(System.in);
+ 
+       System.out.println("enter number");
+	  
+       n=sc.nextLong();
+ 
+       System.out.println("enter power");
+	  
+       p=sc.nextLong();
+ 
+       if(n>=0&&p==0)
+       {   
+          r =1;
+       }
+       else if(n==0&&p>=1)
+	{   
+            r=0;
+	} 
+       else
+	{ 
+              for(int i=1;i<=p;i++)
+	       { 
+                   r=r *n;
+ 	 	}    
+  	 }    
+ 
+    	  System.out.println(n+"^"+p+"="+r);
+ 
     }
-
-    public static int sum(int k) {
-        if (k > 0) {
-            return k + sum(k - 1);
-        } else {
-            return 0;
-        }
+ 
+          
     }
+         
 
-}
+
