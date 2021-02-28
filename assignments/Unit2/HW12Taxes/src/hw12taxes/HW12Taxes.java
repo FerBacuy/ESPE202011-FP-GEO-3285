@@ -25,8 +25,19 @@ public class HW12Taxes {
         float taxableincome = 0;
         float excessfractiontax = 0;
         float taxableivaamount = 0;
-
+        float limitfreeISD;
+        limitfreeISD = 5017.33F;
+        
         Scanner scanner = new Scanner(System.in);
+        System.out.printf("Enter total invoices for sales: ");
+        revenues = scanner.nextFloat();
+        System.out.printf("Enter total invoices for purchases: ");
+        expenses = scanner.nextFloat();
+        System.out.printf("The value to be paid this month is: " + taxableivaamount + "\n");
+        
+        System.out.printf("Enter the amount to send abroad: ");
+        float amounttosend = scanner.nextFloat();
+        
 
         System.out.printf("Enter your annual revenues : ");
         revenues = scanner.nextFloat();
@@ -36,6 +47,9 @@ public class HW12Taxes {
 
         taxableincome = revenues - expenses;
         System.out.printf("Your taxable income is --> " + taxableincome + "\n");
+        
+        
+        
 
         if (taxableincome <= 11212) {
             System.out.printf("You do NOT have to pay basic fraction tax or excess fraction tax. \n");
@@ -83,41 +97,32 @@ public class HW12Taxes {
             }
         }
 
-        showIVACalculation(scanner);
+        showIVACalculation(revenues, expenses);
+        
 
         
-        showISDCalculation(scanner);
+        showISDCalculation(limitfreeISD ,amounttosend);
+        
 
     }
 
-    private static void showIVACalculation(Scanner scanner) {
-        float revenues;
-        float expenses;
+    private static float showIVACalculation(float revenues, float expenses) {
+
         float taxableivaamount;
-        //Monthly Value Added Tax Calculation
-        System.out.printf("Enter total invoices for sales: ");
-        revenues = scanner.nextFloat();
-        System.out.printf("Enter total invoices for purchases: ");
-        expenses = scanner.nextFloat();
         taxableivaamount = (float) ((revenues - expenses) * 0.12);
-        System.out.printf("The value to be paid this month is: " + taxableivaamount + "\n");
+        return taxableivaamount; 
+        
     }
 
-    private static void showISDCalculation(Scanner scanner) {
-        //Foreign currency outflow tax
+    private static float showISDCalculation(float limitfreeISD , float amounttosend) {
         
-        float limitfreeISD = (float) 5017.33;
-        float amounttosend = 0;
-        float ISD =0;
-              
-        System.out.printf("Enter the amount to send abroad: ");
-        amounttosend = scanner.nextFloat();
-        
+        float ISD =0;                    
         if(amounttosend>=limitfreeISD){
             ISD = amounttosend -1200;
             System.out.println("Your value to pay for ISD is: " + ISD);
         }else{
             System.out.println("You are exempt from paying ISD");
         }
+        return ISD;
     }
 }
