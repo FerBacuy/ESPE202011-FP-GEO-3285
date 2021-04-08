@@ -37,6 +37,7 @@ public class HW16MatrixFunctions {
         operatorMatrixB(rows, columns, B, sc);
         readMatrixB(B);
         OperationMultiplicationMatrixAB(C, i, j, A, B);
+        
         System.out.println("THE MULTIPLICATION OF A" + A[i][j] + "* B " + B[i][j] + "IS --- > " + C[i][j]);
 
     }
@@ -77,7 +78,7 @@ public class HW16MatrixFunctions {
     private static void operatorMatrixA(int rows, int columns, int[][] A, Scanner sc) {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                System.out.print("A[" + i + "][" + j + "]= ");
+                System.out.print("A[" + i + "][" + j + "] = ");
                 A[i][j] = sc.nextInt();
             }
         }
